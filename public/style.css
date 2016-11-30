@@ -1,0 +1,43 @@
+h1 {
+  font-family: 'Arizonia', Helvetica, sans-serif;
+  font-size: 120px;
+  line-height: 120px;
+  color: black;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+th {
+	font-family: 'Dancing Script', Georgia, Times, serif;
+	font-size: 28px;
+	line-height: 28px;
+  background-color: black;
+  color: silver;
+}
+
+caption {
+  font-family: 'Allan', Helvetica, Arial, sans-serif;
+	font-size: 54px;
+	line-height: 54px;
+  text-align: center;
+}
+
+td {
+  font-family: 'Oleo Script', Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+h4 {
+  font-family: 'Arizonia', Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  color: black;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+  text-align: left;
+  color: blue;
+}
+
+body{
+  background-color: #f4bf81;
+}

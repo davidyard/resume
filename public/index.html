@@ -1,0 +1,77 @@
+<!DOCTYPE>
+<html ng-app="myApp">
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Allan:bold' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="style.css">
+
+  <title>Resumé</title>
+</head>
+<body>
+  <div class="container" ng-controller="AppCtrl">
+    <h4>David Yardimian</h4>
+    <h1>Resumé</h1><hr>
+    <table class="table">
+      <caption><em>Education</em></caption>
+      <thead>
+        <tr>
+          <th>Name of School</th>
+          <th>Degree</th>
+          <th>Last Year of School</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="edu in educat">
+          <td>{{edu.school}}</td>
+          <td>{{edu.degree}}</td>
+          <td>{{edu.last_year}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table">
+      <caption><em>Skills</em></caption>
+      <thead>
+        <tr>
+          <th>Skills</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="ski in skil">
+          <td>{{ski.skill}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table">
+      <caption><em>Projects</em></caption>
+      <thead>
+        <tr>
+          <th>Title of Project</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="proj in projs">
+          <td>{{proj.title}}</td>
+          <td>{{proj.description}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="controllers/controller.js"></script>
+</body>
+</html>
